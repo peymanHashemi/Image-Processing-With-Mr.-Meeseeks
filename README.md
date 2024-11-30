@@ -32,3 +32,12 @@ Propose and implement a solution to eliminate unnecessary edges, such as those a
 Explore methods for applying histogram equalization to color images.
 Select a color image and implement your proposed solution.
 Analyze the impact of this technique on the image and provide a detailed report with your findings.
+
+
+  * [EX1](#Exercise-1) [Face Symmetry, Climate Change, Steganography, Pacman with OpenCV]
+  * [EX2](#Exercise-2) [Pedestrian/Motion Detection, Bilateral Filtering Poster, Seam Carving]
+  * [EX3](#Exercise-3) [Fourier Analysis, Hybrid Image Generation with frequency separation]
+  * [EX4](#Exercise-4) [Image Restoration, Perspective Transform, Face Morphing with Delaunay Triangulation]
+  * [EX5](#Exercise-5) [Image Compression, Image Filtering, Obejct Detection with Morphological techniques]
+
+<img style="width:200px" src="https://github.com/user-attachments/assets/09c1409a-5777-40fd-b5cf-12b3779d5a8c" >
