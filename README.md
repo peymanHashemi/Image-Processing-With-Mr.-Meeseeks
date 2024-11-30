@@ -70,10 +70,10 @@ Misalignment issues were addressed by aligning channels using a rolling mechanis
 This method simulates early color photography techniques where grayscale images were manually aligned and combined to form color images.
 
 <img style="width:200px" src="https://github.com/user-attachments/assets/5027db50-981d-45c9-8cda-0d1693b7bd1a" > <br>
-<img style="width:400px" src="https://github.com/user-attachments/assets/bd4749c9-51b2-430d-bf38-78d108d08e1e" >
-<img style="width:400px" src="https://github.com/user-attachments/assets/3824cade-254f-40ae-b308-e84417f9e833" >
-<img style="width:400px" src="https://github.com/user-attachments/assets/1e53eaf5-9f01-420a-ab35-e4b6a934dbcb" > <br>
-<img style="width:700px" src="https://github.com/user-attachments/assets/6982473a-192a-43de-9e63-691cb0fe578d" >
+<img style="width:300px" src="https://github.com/user-attachments/assets/bd4749c9-51b2-430d-bf38-78d108d08e1e" >
+<img style="width:300px" src="https://github.com/user-attachments/assets/3824cade-254f-40ae-b308-e84417f9e833" >
+<img style="width:300px" src="https://github.com/user-attachments/assets/1e53eaf5-9f01-420a-ab35-e4b6a934dbcb" > <br>
+<img style="width:500px" src="https://github.com/user-attachments/assets/6982473a-192a-43de-9e63-691cb0fe578d" >
 
 # Question 4
 
@@ -86,7 +86,7 @@ Two different bilateral filters were applied to smooth the image while preservin
 The Canny edge detector was then reapplied to these filtered images, effectively reducing unnecessary edges.
 The results were displayed in a subplot, showing the original, grayscale, and edge-detected images for comparison.
 
-<img style="width:700px" src="https://github.com/user-attachments/assets/f2893593-1525-4357-b8d8-ae85182c2138" >
+<img style="width:500px" src="https://github.com/user-attachments/assets/f2893593-1525-4357-b8d8-ae85182c2138" >
 
 # Question 5
 
