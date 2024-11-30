@@ -33,11 +33,58 @@ Explore methods for applying histogram equalization to color images.
 Select a color image and implement your proposed solution.
 Analyze the impact of this technique on the image and provide a detailed report with your findings.
 
-
-  * [EX1](#Exercise-1) [Face Symmetry, Climate Change, Steganography, Pacman with OpenCV]
-  * [EX2](#Exercise-2) [Pedestrian/Motion Detection, Bilateral Filtering Poster, Seam Carving]
-  * [EX3](#Exercise-3) [Fourier Analysis, Hybrid Image Generation with frequency separation]
-  * [EX4](#Exercise-4) [Image Restoration, Perspective Transform, Face Morphing with Delaunay Triangulation]
-  * [EX5](#Exercise-5) [Image Compression, Image Filtering, Obejct Detection with Morphological techniques]
+# implementation
+  * [Q1](#Question-1) [Gray-scale Conversion]
+  * [Q2](#Question-2) [Object Detection and Isolation]
+  * [Q3](#Question-3) [Color Image Reconstruction]
+  * [Q4](#Question-4) [Edge Detection]
+  * [Q5](#Question-5) [Histogram Equalization on Color Images]
 
 <img style="width:200px" src="https://github.com/user-attachments/assets/09c1409a-5777-40fd-b5cf-12b3779d5a8c" >
+
+
+# Question 1
+
+Loaded a color image of Mr. Meeseeks HQ and converted it to grayscale using OpenCV’s cvtColor function.
+<img style="width:200px" src="https://github.com/user-attachments/assets/09c1409a-5777-40fd-b5cf-12b3779d5a8c" >
+<img style="width:200px" src="https://github.com/user-attachments/assets/09c1409a-5777-40fd-b5cf-12b3779d5a8c" >
+# Question 2
+
+Created a mask based on color thresholds to isolate Mr. Meeseeks from the background and used a bitwise operation to highlight the detected regions.
+
+# Question 3
+
+The code follows a historical method for colorization:
+
+### Image Splitting:
+A grayscale image was divided into three equal vertical sections, each representing a different color channel.
+The split images were assigned as Red, Green, and Blue channels.
+###  Channel Stacking:
+The sections were stacked using np.dstack to form a composite color image.
+Misalignment issues were addressed by aligning channels using a rolling mechanism, adjusting horizontally and vertically until similarity was maximized based on correlation coefficients.
+This method simulates early color photography techniques where grayscale images were manually aligned and combined to form color images.
+
+# Question 4
+
+## The edge detection process involved:
+
+### Canny Edge Detection:
+Applied to a grayscale version of the image.
+### Noise Reduction with Bilateral Filtering:
+Two different bilateral filters were applied to smooth the image while preserving edges.
+The Canny edge detector was then reapplied to these filtered images, effectively reducing unnecessary edges.
+The results were displayed in a subplot, showing the original, grayscale, and edge-detected images for comparison.
+
+
+# Question 5
+
+The histogram equalization function performs the following:
+
+Cumulative Distribution Function (CDF) Calculation:
+Calculated the CDF of the original image.
+### Interpolation:
+Mapped the original intensity values to new values using linear interpolation against a target CDF.
+### Resulting Image:
+Adjusted the image using the interpolated values and displayed before-and-after comparisons.
+### Visualization:
+Plotted the CDF of the original and equalized images along with the target CDF, showing how pixel intensity distributions were adjusted for better contrast.
